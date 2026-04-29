@@ -63,7 +63,7 @@ export default function LoginForm() {
         <div className="card p-8">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
             <Input
-              label="Email Address" type="email" placeholder="you@example.com"
+              label="Email Address: admin@example.com" type="email" placeholder="you@example.com"
               error={errors.email?.message}
               {...register('email', {
                 required: 'Email is required',
@@ -72,7 +72,7 @@ export default function LoginForm() {
             />
             <div className="relative">
               <Input
-                label="Password" type={showPass ? 'text' : 'password'}
+                label="Password: admin123" type={showPass ? 'text' : 'password'}
                 placeholder="Your password" error={errors.password?.message}
                 {...register('password', {
                   required: 'Password is required',
